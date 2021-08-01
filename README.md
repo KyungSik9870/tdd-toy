@@ -1,6 +1,6 @@
 #TDD (Test Driven Development)
 
-<img src="/Users/ksryu/workspace/study/tdd-toy/src/main/resources/img/tdd.png" width="400">
+<img src="/resources/img/tdd.png" width="400">
 
 테스트가 주도하는 개발.  
 기존에 방식 : 설계 - 개발 - 테스트   

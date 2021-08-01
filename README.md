@@ -51,10 +51,17 @@ null 이거나 빈 값이면 0을 리턴
 
 
 
+* Git branch 전략
+- master (main) : 실제 사용자가 보게되는 거
+- release : 기획 / 유저의 요청 ex) A, B, C 기능 -> 얘네 묶어서 하나의 새버전으로 만들자! 
+- develop : 개발단계 -> A branch, B branch, C branch
+- feature : 실제 개발자가 사용하는 브랜치
+ A-1 branch, A-2 branch - 류경식
+  , B branch - 연주
+  , C-1 branch...
 
-
-#ATDD (Acceptance Test Driven Development)
-
+* 통합테스트 : 각자 만든 작은 기능단위들을 합쳤을때 정상적으로 동작하는지 보는거
+* 인수테스트 : 유저의 시나리오 대로 동작하는지
 
 
 

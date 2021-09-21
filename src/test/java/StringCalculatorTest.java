@@ -12,4 +12,11 @@ public class StringCalculatorTest {
 		assertThat(stringCalculator.splitAndSum(null)).isEqualTo(0);
 		assertThat(stringCalculator.splitAndSum("")).isEqualTo(0);
 	}
+
+	@DisplayName("숫자하나만 전달하면 그대로 리턴")
+	@Test
+	void singleNumber() {
+		StringCalculator stringCalculator = new StringCalculator();
+		assertThat(stringCalculator.splitAndSum("1")).isEqualTo(1);
+	}
 }

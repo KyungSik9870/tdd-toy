@@ -1,11 +1,13 @@
 public class StringCalculator {
 
+	private static final String REGEX = ",|:";
+
 	public int splitAndSum(String input) {
 		if (input == null || input.isEmpty()) {
 			return 0;
 		}
 
-		return sum(toInts(input.split(",|:")));
+		return sum(toInts(input.split(REGEX)));
 	}
 
 	private int[] toInts(String[] inputs) {

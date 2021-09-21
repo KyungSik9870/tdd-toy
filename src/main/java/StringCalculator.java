@@ -5,7 +5,7 @@ public class StringCalculator {
 			return 0;
 		}
 
-		return sum(toInts(input.split(",")));
+		return sum(toInts(input.split(",|:")));
 	}
 
 	private int[] toInts(String[] inputs) {

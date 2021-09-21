@@ -19,4 +19,11 @@ public class StringCalculatorTest {
 		StringCalculator stringCalculator = new StringCalculator();
 		assertThat(stringCalculator.splitAndSum("1")).isEqualTo(1);
 	}
+
+	@DisplayName("콤마를 구분자로 각 숫자의 합을 계산")
+	@Test
+	void comma_split_and_sum() {
+		StringCalculator stringCalculator = new StringCalculator();
+		assertThat(stringCalculator.splitAndSum("1,2,3")).isEqualTo(6);
+	}
 }

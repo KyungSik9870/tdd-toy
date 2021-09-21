@@ -1,16 +1,28 @@
 public class StringCalculator {
 
 	public int splitAndSum(String input) {
-		int result = 0;
-
 		if (input == null || input.isEmpty()) {
 			return 0;
-		} else {
-			String[] inputs = input.split(",");
-			for (String number : inputs) {
-				result += Integer.parseInt(number);
-			}
 		}
+
+		return sum(toInts(input.split(",")));
+	}
+
+	private int[] toInts(String[] inputs) {
+		int[] numbers = new int[inputs.length];
+		for (int i = 0; i < inputs.length; i++) {
+			numbers[i] = Integer.parseInt(inputs[i]);
+		}
+
+		return numbers;
+	}
+
+	private int sum(int[] numbers) {
+		int result = 0;
+		for (int i = 0; i < numbers.length; i++) {
+			result += numbers[i];
+		}
+
 		return result;
 	}
 }

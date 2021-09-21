@@ -31,4 +31,10 @@ public class StringCalculatorTest {
 	void comma_split_and_sum() {
 		assertThat(stringCalculator.splitAndSum("1,2,3")).isEqualTo(6);
 	}
+
+	@DisplayName("콤마 또는 콜론을 구분자로 각 숫자의 합을 계산")
+	@Test
+	void comma_colon_split_and_sum() {
+		assertThat(stringCalculator.splitAndSum("1,2:3")).isEqualTo(6);
+	}
 }
